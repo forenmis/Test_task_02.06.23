@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="@dimen/cardview_default_elevation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="kjnjknjk" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAuthor"
+            tools:text="kjnjknjk" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivImage"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            tools:background="@drawable/ic_launcher_background" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvCreatedAt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="12312312 sdsdfsd" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:id="@+id/tvNumComments"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivImage"
+            tools:text="12312312 sdsdfsd" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

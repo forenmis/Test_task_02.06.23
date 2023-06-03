@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">VRG_Soft_test</string>
+    <string name="hours_ago"> %1d hours ago</string>
+    <string name="comments"> %1d comments</string>
+</resources>
